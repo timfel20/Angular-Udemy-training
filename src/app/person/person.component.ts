@@ -9,6 +9,9 @@ export class PersonComponent implements OnInit {
   /* using @Input() because properties from components(in this case feature) is only accessible inside the Component,
   to be able to use it outside this component and use external components to add data and sent it as the data of our feature Property,
   we use Input. Input is to open our property for modicication and receive the modified values.   */
+
+ /*  Your can access feature as myFeature for example if you put @Input() as  @Input('myFeature') */
+
   @Input()
   feature! : {
     name: string, 
@@ -20,7 +23,4 @@ export class PersonComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
- 
-
 }
