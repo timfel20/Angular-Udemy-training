@@ -1,0 +1,8 @@
+<button class="btn btn-primary" (click)="switchMode()"> toggle botteo!</button>
+<p>Let's see if I'm online or offline</p>
+<div *ngFor=" let status of statuses ">
+    <p [ngStyle] = "{backgroundColor: status.color}">{{status.status}}</p>
+    <!-- <p [ngStyle] = "{backgroundColor: status.color}">{{status.status}}</p> -->
+</div>
+
+

@@ -1,0 +1,3 @@
+<button class="btn btn-primary" (click)=" toggleWord()">Display details</button>
+<!-- <p *ngIf ="secreteWord">Secrete word is palazo</p>-->
+<p *ngFor="let number of numbers; let i = index" [ngClass]=" i > 3 ? applyRed : ''">{{ number }}</p>

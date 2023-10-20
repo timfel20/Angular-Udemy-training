@@ -1,0 +1,5 @@
+<button  class="btn btn-primary" (click) = "onButtonClick()">click me to change</button>
+<p *ngIf="displayControl; else displayMeInstead">{{displayMe}}</p>
+<ng-template #displayMeInstead>
+    <p> Not found</p>
+</ng-template>

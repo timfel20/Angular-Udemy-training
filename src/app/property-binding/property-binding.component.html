@@ -1,0 +1,23 @@
+<!-- <button [disabled] = "whenDisabled"  (click) = "onButtonClick"
+class = "btn btn-primary">test button</button>
+<p>{{serverText}}</p>
+<p [innerText] = "whenDisabled"></p>
+<p>{{whenDisabled}}</p> -->
+<!-- <input type = "text" class="form-control" (input)="getEvent($event)"/> -->
+
+<input  type = "text" class="form-control" [(ngModel)] ="easierWay"/>
+<button (click) = "onButtonClick()" class = "btn btn-primary">test button</button>
+<p *ngIf="myTarget">{{easierWay}}</p>
+
+<input  type = "text" class="form-control" [(ngModel)] ="modelText"/>
+<button (click) = "onButtonClick2()" class = "btn btn-primary">test button</button>
+<p ></p>
+
+<!-- task 3 -->
+<input  type = "text" class="form-control" (input) ="getWhenNotEmpty($event)" />
+<button [disabled] = "whenICantClick" class = "btn btn-primary">disabled?</button>
+
+<!-- task 4 -->
+<input  type = "text" class="form-control" [(ngModel)] ="modelWhenNotEmpty" />
+<button [disabled] = "whenICantClickTwo" class = "btn btn-primary">disabled?</button>
+<button (click)="getWhenNotEmptyTwo()">jkfijfs</button>
