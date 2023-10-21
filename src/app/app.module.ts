@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { PersonComponent } from './person/person.component';
 import { InputAndButtonComponent } from './input-and-button/input-and-button.component';
 import { InputAndButtonRepeatToPracticeComponent } from './input-and-button-repeat-to-practice/input-and-button-repeat-to-practice.component';
+import { LocalReferencesComponent } from './local-references/local-references.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PersonComponent,
     InputAndButtonComponent,
-    InputAndButtonRepeatToPracticeComponent
+    InputAndButtonRepeatToPracticeComponent,
+    LocalReferencesComponent
   ],
   imports: [
     BrowserModule,

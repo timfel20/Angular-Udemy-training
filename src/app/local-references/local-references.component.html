@@ -1,0 +1,16 @@
+<div class="container mt-4">
+    <div class="mb-3">
+        <label for="inputText1" class="form-label">Input whose reference we wanna get</label>
+        <input type="text" class="form-control" id="inputText1" placeholder="Enter value here"
+        #localreferece
+        >
+        <input type="text" class="form-control" id="inputText1" placeholder="Enter value here"
+        #viewMyChild
+        >
+    </div>
+    <button class="btn btn-primary" (click)="getLocalReference(localreferece)">Get value</button>
+    <p>{{serverValue}}</p>
+
+    <button class="btn btn-primary" (click)="getValueWithViewChild()">Get value</button>
+    <p>{{childValue}}</p>
+</div>
