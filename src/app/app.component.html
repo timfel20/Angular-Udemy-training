@@ -1,0 +1,9 @@
+<app-game-control (createGame)="getCreateGame($event)"></app-game-control>
+<app-even 
+*ngFor = "let parentEvenSingle of parentEvensList"
+[evenNumber]="parentEvenSingle">
+</app-even>
+
+<app-odd *ngFor = "let parentOddSingle of parentOddsList"
+ [oddNumber]="parentOddSingle">
+</app-odd>
