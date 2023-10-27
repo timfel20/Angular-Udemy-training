@@ -1,7 +1,2 @@
-<!-- using [feature]="personFeature and not personFeatures because we're saving each iteration in the features property and not all personFeatures  -->
-<!-- <app-input-and-button (dataCreated) = "createData($event)"></app-input-and-button> -->
-<app-input-and-button-repeat-to-practice  (dataCreated) = "createData($event)"></app-input-and-button-repeat-to-practice>
-<app-person *ngFor="let personFeature of personFeatures"
-[feature]="personFeature"
-></app-person>
-<app-local-references></app-local-references>
+<app-template-for-basic></app-template-for-basic>
+<app-template-for-better></app-template-for-better>

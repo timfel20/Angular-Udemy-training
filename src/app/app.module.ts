@@ -4,18 +4,18 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PersonComponent } from './person/person.component';
-import { InputAndButtonComponent } from './input-and-button/input-and-button.component';
-import { InputAndButtonRepeatToPracticeComponent } from './input-and-button-repeat-to-practice/input-and-button-repeat-to-practice.component';
-import { LocalReferencesComponent } from './local-references/local-references.component';
+import { BetterHighlightDirective } from './better-highlight.directive';
+import { BasicHighlightDirective } from './basic-highlight.directive';
+import { TemplateForBasicComponent } from './template-for-basic/template-for-basic.component';
+import { TemplateForBetterComponent } from './template-for-better/template-for-better.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PersonComponent,
-    InputAndButtonComponent,
-    InputAndButtonRepeatToPracticeComponent,
-    LocalReferencesComponent
+    BetterHighlightDirective,
+    BasicHighlightDirective,
+    TemplateForBasicComponent,
+    TemplateForBetterComponent,
   ],
   imports: [
     BrowserModule,

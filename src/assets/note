@@ -1,0 +1,8 @@
+Attribute directive 
+
+Change the appearance or behavior of DOM elements and Angular components with ***attribute
+It used elementref: Elamantref to access dom elements belonging to the module where it is imported*** 
+
+To use it in the templates. <p directiveName></p>
+
+using renderer is a better way to work with directives which is what I’ll have in git
