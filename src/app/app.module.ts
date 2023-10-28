@@ -8,6 +8,7 @@ import { BetterHighlightDirective } from './better-highlight.directive';
 import { BasicHighlightDirective } from './basic-highlight.directive';
 import { TemplateForBasicComponent } from './template-for-basic/template-for-basic.component';
 import { TemplateForBetterComponent } from './template-for-better/template-for-better.component';
+import { UnlessDirectiveDirective } from './unless-directive.directive';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { TemplateForBetterComponent } from './template-for-better/template-for-b
     BasicHighlightDirective,
     TemplateForBasicComponent,
     TemplateForBetterComponent,
+    UnlessDirectiveDirective,
   ],
   imports: [
     BrowserModule,
