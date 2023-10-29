@@ -1,0 +1,7 @@
+<ul class="list-group">
+    <li class="list-group-item" *ngIf="userInfo.name">
+      {{ userInfo.name }}
+      <button (click)="changeStatus(id, userInfo.status)">Set to active</button>
+    </li>
+  </ul>
+  

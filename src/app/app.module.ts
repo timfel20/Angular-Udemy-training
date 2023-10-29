@@ -4,27 +4,26 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BetterHighlightDirective } from './better-highlight.directive';
-import { BasicHighlightDirective } from './basic-highlight.directive';
-import { TemplateForBasicComponent } from './template-for-basic/template-for-basic.component';
-import { TemplateForBetterComponent } from './template-for-better/template-for-better.component';
-import { UnlessDirectiveDirective } from './unless-directive.directive';
+import { ActiveUsersComponent } from './active-users/active-users.component';
+import { InactiveUsersComponent } from './inactive-users/inactive-users.component';
+import { UsersServiceService } from './users-service.service';
+import { CounterServiceService } from './counter-service.service';
+import { CreateUsersComponent } from './create-users/create-users.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    BetterHighlightDirective,
-    BasicHighlightDirective,
-    TemplateForBasicComponent,
-    TemplateForBetterComponent,
-    UnlessDirectiveDirective,
+    ActiveUsersComponent,
+    InactiveUsersComponent,
+    CreateUsersComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [UsersServiceService, CounterServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
