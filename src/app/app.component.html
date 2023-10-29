@@ -2,12 +2,11 @@
     <div class="row">
       <div class="col-xs-12 col-md-8 col-md-offset-2">
       </div>
-      <app-create-users (createdUser)="createUsers($event)"></app-create-users>
+      <app-create-users></app-create-users>
       <h3>Active Users</h3>
         <app-active-users *ngFor="let activeUser of activeUsers; let idx = index"
         [userInfo] = 'activeUser'
         [id] = 'idx'
-        (statusChanged)="onchangetoInactive($event)"
         ></app-active-users>
 
       <h3>Inactive Users</h3>
@@ -15,7 +14,6 @@
       [userInfo] = 'inactiveUser'
       [id] = 'idx'
 
-      (statusChanged)="onchangetoActive($event)"
       ></app-inactive-users>
       <!--
         Optimize this app by adding a UsersService which manages the active and inactive users.
